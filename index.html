@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software List Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Comprehensive Software List</h1>
+
+        <!-- Filter Options -->
+        <div class="filters">
+            <label for="vendorFilter">Filter by Vendor:</label>
+            <select id="vendorFilter">
+                <option value="all">All</option>
+                <!-- Options populated dynamically by JS -->
+            </select>
+
+            <label for="categoryFilter">Filter by Category:</label>
+            <select id="categoryFilter">
+                <option value="all">All</option>
+                <!-- Options populated dynamically by JS -->
+            </select>
+
+            <label for="sortOption">Sort by:</label>
+            <select id="sortOption">
+                <option value="releaseDate">Release Date</option>
+                <option value="versionNumber">Version Number</option>
+            </select>
+            <button onclick="applyFilters()">Apply</button>
+        </div>
+
+        <!-- Software List Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Software Name</th>
+                    <th>Vendor Logo</th>
+                    <th>Current Version</th>
+                    <th>Release Date</th>
+                    <th>Download Link</th>
+                    <th>Vendor Description</th>
+                </tr>
+            </thead>
+            <tbody id="softwareList">
+                <!-- Rows populated dynamically by JS -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
