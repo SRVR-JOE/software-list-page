@@ -1,15 +1,15 @@
 // Sample data to be displayed
 const softwareData = [
     {
-        name: "Software A",
+        name: "Videohub",
         logo: "assets/logoA.png",
-        version: "1.2.3",
+        version: "10.0",
         releaseDate: "2023-09-15",
         downloadLink: "https://www.blackmagicdesign.com/developer/partial/videohub/sdk-and-software#",
         vendorDescription: "Vendor A provides excellent software solutions.",
         vendor: "Vendor A",
         category: "Utility"
-    },
+    }
     {
         name: "Software B",
         logo: "assets/logoB.png",
@@ -18,6 +18,16 @@ const softwareData = [
         downloadLink: "https://vendor-b.com/download",
         vendorDescription: "Vendor B specializes in enterprise software.",
         vendor: "Vendor B",
+        category: "Enterprise"
+    }
+    {
+        name: "Software C",
+        logo: "assets/logoC.png",
+        version: "4.5.6",
+        releaseDate: "2023-07-20",
+        downloadLink: "https://vendor-C.com/download",
+        vendorDescription: "Vendor C specializes in enterprise software.",
+        vendor: "Vendor C",
         category: "Enterprise"
     }
     // Add more software items as needed
